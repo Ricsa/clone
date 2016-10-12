@@ -1,8 +1,11 @@
-// Place all the styles related to the pages controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
-
-.csik {background-image: url("/images/uveg.jpg");
-opacity: 0.1;
+.glass{
+	opacity:0.2;
 }
-
+.szoveg{
+	display: flex;
+	justify-content: center; /* align horizontal */
+	align-items: center;
+	min-height:500px;
+	color:rgba(255,255,255,0.8);
+	text-align: center;
+}
