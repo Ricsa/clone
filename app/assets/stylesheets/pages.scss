@@ -1,12 +1,45 @@
+//
+// mixin for bullet proof font declaration syntax
+//
+@mixin declare-font-face($font-family, $font-filename, $font-weight : normal, $font-style :normal, $font-stretch : normal) {
+@font-face {
+font-family: '#{$font-family}';
+src: url(font-path('#{$font-filename}.eot'));
+src: url(font-path('#{$font-filename}.eot?#iefix')) format('embedded-opentype'),
+url(font-path('#{$font-filename}.woff')) format('woff'),
+url(font-path('#{$font-filename}.ttf')) format('truetype'),
+url(font-path('#{$font-filename}.svg##{$font-family}')) format('svg');
+font-weight: $font-weight;
+font-style: $font-style;
+font-stretch: $font-stretch;
+}
+}
+
+@include declare-font-face('Changa-Regular', 'Changa-Regular', 200);
+@include declare-font-face('Changa-SemiBold', 'Changa-SemiBold', 200);
+@include declare-font-face('AlfaSlabOne-Regular', 'AlfaSlabOne-Regular', 200);
+$big-parallax-font: AlfaSlabOne-Regular;
+$big-default-font: Changa-Regular;
+body{
+
+}
+
+h1,h2,h3,h4,h5 {
+	font-family: $big-parallax-font;
+}
+p{
+	font-family: $big-default-font;
+}
 .glass{
 	opacity:0.3;
 }
 .szoveg{
+	font-family:$big-parallax-font;
 	display: flex;
 	justify-content: center; /* align horizontal */
 	align-items: center;
 	min-height:500px;
-	color:rgba(255,255,255,0.8);
+	color:rgba(255,255,255,1);
 	text-align: center;
 }
 footer.page-footer{
