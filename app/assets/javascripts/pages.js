@@ -1,6 +1,5 @@
-jQuery(document).ready(function($){
-    
-	var clientHeight = $( window ).height();
+document.addEventListener("turbolinks:load", function() {
+  	var clientHeight = $( window ).height();
 	$('.element').css('height', clientHeight);
 
 	//
@@ -12,4 +11,4 @@ jQuery(document).ready(function($){
 	$(".button-collapse").sideNav();
 	// Initialize collapsible (uncomment the line below if you use the dropdown variation)
 	//$('.collapsible').collapsible();
-});
+})
