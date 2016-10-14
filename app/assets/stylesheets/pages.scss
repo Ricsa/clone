@@ -1,6 +1,4 @@
-//
-// mixin for bullet proof font declaration syntax
-//
+/* mixin for bullet proof font declaration syntax */
 @mixin declare-font-face($font-family, $font-filename, $font-weight : normal, $font-style :normal, $font-stretch : normal) {
 @font-face {
 font-family: '#{$font-family}';
@@ -24,12 +22,14 @@ body{
 
 }
 
+
 h1,h2,h3,h4,h5 {
 	font-family: $big-parallax-font;
 }
 p{
 	font-family: $big-default-font;
 }
+
 .glass{
 	opacity:0.3;
 }
@@ -42,7 +42,9 @@ p{
 	color:rgba(255,255,255,1);
 	text-align: center;
 }
+
 footer.page-footer{
 	margin:0;
 }
+
 
