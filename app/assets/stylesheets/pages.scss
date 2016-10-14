@@ -12,25 +12,19 @@ font-style: $font-style;
 font-stretch: $font-stretch;
 }
 }
-
 @include declare-font-face('Changa-Regular', 'Changa-Regular', 200);
 @include declare-font-face('Changa-SemiBold', 'Changa-SemiBold', 200);
 @include declare-font-face('AlfaSlabOne-Regular', 'AlfaSlabOne-Regular', 200);
 $big-parallax-font: AlfaSlabOne-Regular;
 $big-default-font: Changa-Regular;
 body{
-
 }
-
 .turbolinks-progress-bar {
   height: 10px;
   background-color: #007d72;
 }
-
 body {
-
   }
-
 h1,h2,h3,h4,h5 {
 	font-family: $big-parallax-font;
 }
@@ -49,9 +43,7 @@ nav{
 footer.page-footer{
 	margin:0;
 }
-
 .element {height: 100vh;}
-
 .glass{
 	opacity:0.3;
 }
@@ -68,4 +60,34 @@ footer.page-footer{
 	line-height: 1.6em;
     color: rgba(255,255,255,0.9);
     text-shadow: 6px 6px 0px rgba(0,0,0,0.2);
+<<<<<<< HEAD
 }
+=======
+}
+footer.page-footer {
+	margin:0;
+}
+
+.nevjegy {height: 50px;
+width: 50px;
+vertical-align: middle;
+margin-bottom: 7px;}
+
+.nev {font-size:120%;
+}
+
+.kapcs {padding-top: 11px;}
+
+.vastag {
+	font-weight: 500;
+	position: relative;
+    top: 10px;}
+
+.t-r{text-align: right;
+position: relative;
+    top: 10px;}
+
+.kopi {margin: 0;
+}
+
+>>>>>>> release/FOOTER
