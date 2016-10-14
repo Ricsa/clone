@@ -31,19 +31,14 @@ h1,h2,h3,h4,h5 {
 p{
 	font-family: $big-default-font;
 }
+
 /*CONTENT*/
 #ajanlatkeres{
 	
 }
-/*NAVBAR*/
-nav{
-	font-family: $big-default-font;
+.element {
+	height: 100vh;
 }
-/*FOOTER*/
-footer.page-footer{
-	margin:0;
-}
-.element {height: 100vh;}
 .glass{
 	opacity:0.3;
 }
@@ -60,34 +55,56 @@ footer.page-footer{
 	line-height: 1.6em;
     color: rgba(255,255,255,0.9);
     text-shadow: 6px 6px 0px rgba(0,0,0,0.2);
-<<<<<<< HEAD
 }
-=======
+
+/*NAVBAR*/
+nav{
+	font-family: $big-default-font;
 }
-footer.page-footer {
+
+/*FOOTER*/
+footer.page-footer{
 	margin:0;
 }
 
-.nevjegy {height: 50px;
-width: 50px;
-vertical-align: middle;
-margin-bottom: 7px;}
+#nevjegykartya{
 
-.nev {font-size:120%;
+	p{
+		font-size: 1.2em;
+	}
+}
+.avatar{
 }
 
-.kapcs {padding-top: 11px;}
-
-.vastag {
-	font-weight: 500;
-	position: relative;
-    top: 10px;}
-
-.t-r{text-align: right;
-position: relative;
-    top: 10px;}
-
-.kopi {margin: 0;
+@media screen and (max-width: 600px) {
+	.avatar{
+		max-width: 125px;
+		max-height: 125px;
+	}
+}
+@media screen and (max-width: 480px) {
+	.avatar{
+		max-width: 100px;
+		max-height: 100px;
+	}
+}
+@media screen and (max-width: 320px) {
+	.avatar{
+		max-width: 75px;
+		max-height: 75px;
+	}
 }
 
->>>>>>> release/FOOTER
+.kapcs {
+	padding-top: 0.5em;
+}
+
+.kopi {
+	text-align: center;
+	margin: 0;
+	padding-top: 1em;
+	.container .row .col{
+		padding-top:0.5em;
+	}
+}
+
