@@ -1,6 +1,4 @@
-//
-// mixin for bullet proof font declaration syntax
-//
+/* mixin for bullet proof font declaration syntax */
 @mixin declare-font-face($font-family, $font-filename, $font-weight : normal, $font-style :normal, $font-stretch : normal) {
 @font-face {
 font-family: '#{$font-family}';
@@ -29,11 +27,27 @@ body{
   background-color: #007d72;
 }
 
+body {
+
+  }
+
 h1,h2,h3,h4,h5 {
 	font-family: $big-parallax-font;
 }
 p{
 	font-family: $big-default-font;
+}
+/*CONTENT*/
+#ajanlatkeres{
+	
+}
+/*NAVBAR*/
+nav{
+	font-family: $big-default-font;
+}
+/*FOOTER*/
+footer.page-footer{
+	margin:0;
 }
 
 .element {height: 100vh;}
@@ -54,7 +68,4 @@ p{
 	line-height: 1.6em;
     color: rgba(255,255,255,0.9);
     text-shadow: 6px 6px 0px rgba(0,0,0,0.2);
-}
-footer.page-footer{
-	margin:0;
 }
