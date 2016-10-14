@@ -12,24 +12,38 @@ font-style: $font-style;
 font-stretch: $font-stretch;
 }
 }
-
 @include declare-font-face('Changa-Regular', 'Changa-Regular', 200);
 @include declare-font-face('Changa-SemiBold', 'Changa-SemiBold', 200);
 @include declare-font-face('AlfaSlabOne-Regular', 'AlfaSlabOne-Regular', 200);
 $big-parallax-font: AlfaSlabOne-Regular;
 $big-default-font: Changa-Regular;
 body{
-
 }
-
-
+.turbolinks-progress-bar {
+  height: 10px;
+  background-color: #007d72;
+}
+body {
+  }
 h1,h2,h3,h4,h5 {
 	font-family: $big-parallax-font;
 }
 p{
 	font-family: $big-default-font;
 }
-
+/*CONTENT*/
+#ajanlatkeres{
+	
+}
+/*NAVBAR*/
+nav{
+	font-family: $big-default-font;
+}
+/*FOOTER*/
+footer.page-footer{
+	margin:0;
+}
+.element {height: 100vh;}
 .glass{
 	opacity:0.3;
 }
@@ -42,9 +56,8 @@ p{
 	color:rgba(255,255,255,1);
 	text-align: center;
 }
-
-footer.page-footer{
-	margin:0;
+.parallax-fontshadow{
+	line-height: 1.6em;
+    color: rgba(255,255,255,0.9);
+    text-shadow: 6px 6px 0px rgba(0,0,0,0.2);
 }
-
-
