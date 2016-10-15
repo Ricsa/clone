@@ -1,3 +1,17 @@
+/*for Jquery SPage scrolling feature - solution for fixed nav */
+.jumptarget::before {
+  content:"";
+  display:block;
+  height:64px; /* fixed header height*/
+  margin:-63px 0 0; /* negative fixed header height */
+}
+@media screen and (max-width: 585px) {
+    .jumptarget::before {
+        height:56px; /* fixed header height*/
+  		margin:-56px 0 0; /* negative fixed header height */
+    }
+}
+
 /* mixin for bullet proof font declaration syntax */
 @mixin declare-font-face($font-family, $font-filename, $font-weight : normal, $font-style :normal, $font-stretch : normal) {
 @font-face {
@@ -96,3 +110,4 @@ footer.page-footer{
 #nevjegykartya1,#nevjegykartya2,#nevjegykartya3{
 
 }
+
