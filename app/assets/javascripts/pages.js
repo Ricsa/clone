@@ -26,9 +26,9 @@ document.addEventListener("turbolinks:load", function() {
     });
     //Scrollfire effect
     var options = [{ selector:"#nevjegykartyak", offset: 100, callback:function() {
-		$("#nevjegykartya1").fadeIn(1000);
-		$("#nevjegykartya2").fadeIn(1500);
-		$("#nevjegykartya3").fadeIn(2000);
+		$("#nevjegykartya1").fadeIn(1500);
+		$("#nevjegykartya2").fadeIn(2000);
+		$("#nevjegykartya3").fadeIn(2500);
 	}
 	}];
 	Materialize.scrollFire(options);
