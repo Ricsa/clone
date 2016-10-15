@@ -26,4 +26,7 @@ document.addEventListener("turbolinks:load", function() {
       menuWidth: 200, // Default is 240
       closeOnClick: true // Closes side-nav on <a> clicks, useful for Angular/Meteor
     });
+
+
 });
+
