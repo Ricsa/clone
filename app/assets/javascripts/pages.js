@@ -1,6 +1,7 @@
 document.addEventListener("turbolinks:load", function() {
-	var clientHeight = $( window ).height();
-	$('.element').css('height', clientHeight);
+	
+	//var clientHeight = $( window ).height();
+	//$('.element').css('height', clientHeight);
 
 	//jQuery for page scrolling feature - requires jQuery Easing plugin
 	$(function() {
