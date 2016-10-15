@@ -12,7 +12,9 @@ document.addEventListener("turbolinks:load", function() {
 	        event.preventDefault();
 	    });
 	});
-
+	//WOWJS//
+	//
+	new WOW().init();
 	//
 	//MATERIALIZE JS
 	//
