@@ -68,9 +68,10 @@ footer.page-footer{
 }
 
 #nevjegykartya{
+	padding:0.1em;
 
 	p{
-		font-size: 1.2em;
+		padding:0.1em;
 	}
 }
 .avatar{
@@ -93,6 +94,10 @@ footer.page-footer{
 		max-width: 75px;
 		max-height: 75px;
 	}
+}
+
+.nev {
+	font-size:120%;
 }
 
 .kapcs {
