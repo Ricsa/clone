@@ -25,19 +25,11 @@ document.addEventListener("turbolinks:load", function() {
       closeOnClick: true // Closes side-nav on <a> clicks, useful for Angular/Meteor
     });
     //Scrollfire effect
-      var options = [
-    {selector: '#staggered-test', offset: 50, callback: function(el) {
-      Materialize.toast("This is our ScrollFire Demo!", 1500 );
-    } },
-    {selector: '#staggered-test', offset: 205, callback: function(el) {
-      Materialize.toast("Please continue scrolling!", 1500 );
-    } },
-    {selector: '#staggered-test', offset: 400, callback: function(el) {
-      Materialize.showStaggeredList($(el));
-    } },
-    {selector: '#image-test', offset: 500, callback: function(el) {
-      Materialize.fadeInImage($(el));
-    } }
-    ];
-  	Materialize.scrollFire(options);
+    var options = [{ selector:"#nevjegykartyak", offset: 100, callback:function() {
+		$("#nevjegykartya1").fadeIn(1000);
+		$("#nevjegykartya2").fadeIn(1500);
+		$("#nevjegykartya3").fadeIn(2000);
+	}
+	}];
+	Materialize.scrollFire(options);
 });
