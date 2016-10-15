@@ -16,6 +16,7 @@ document.addEventListener("turbolinks:load", function() {
 	//
 	//MATERIALIZE JS
 	//
+	// Parallax effect
 	$('.parallax').parallax();
 
 	// Initialize collapse button
@@ -23,4 +24,12 @@ document.addEventListener("turbolinks:load", function() {
       menuWidth: 200, // Default is 240
       closeOnClick: true // Closes side-nav on <a> clicks, useful for Angular/Meteor
     });
+    //Scrollfire effect
+    var options = [{ selector:"#nevjegykartyak", offset: 100, callback:function() {
+		$("#nevjegykartya1").fadeIn(1000);
+		$("#nevjegykartya2").fadeIn(1500);
+		$("#nevjegykartya3").fadeIn(2000);
+	}
+	}];
+	Materialize.scrollFire(options);
 });
