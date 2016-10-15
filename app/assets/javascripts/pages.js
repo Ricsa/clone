@@ -12,7 +12,9 @@ document.addEventListener("turbolinks:load", function() {
 	        event.preventDefault();
 	    });
 	});
-
+	//WOWJS//
+	//
+	new WOW().init();
 	//
 	//MATERIALIZE JS
 	//
@@ -24,12 +26,4 @@ document.addEventListener("turbolinks:load", function() {
       menuWidth: 200, // Default is 240
       closeOnClick: true // Closes side-nav on <a> clicks, useful for Angular/Meteor
     });
-    //Scrollfire effect
-    var options = [{ selector:"#nevjegykartyak", offset: 100, callback:function() {
-		$("#nevjegykartya1").fadeIn(1500);
-		$("#nevjegykartya2").fadeIn(2000);
-		$("#nevjegykartya3").fadeIn(2500);
-	}
-	}];
-	Materialize.scrollFire(options);
 });
