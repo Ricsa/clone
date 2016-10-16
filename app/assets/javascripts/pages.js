@@ -6,7 +6,7 @@ document.addEventListener("turbolinks:load", function() {
 	var bg = jQuery(".element");
 	jQuery(window).resize("resizeBackground");
 	function resizeBackground() {
-	    bg.height(jQuery(window).height());
+	    bg.height(jQuery(window).height()+64);
 	}
 	resizeBackground();
 
