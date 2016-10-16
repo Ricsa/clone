@@ -2,7 +2,7 @@
 .jumptarget::before {
   content:"";
   display:block;
-  height:64px; /* fixed header height*/
+  height:63px; /* fixed header height*/
   margin:-63px 0 0; /* negative fixed header height */
 }
 
