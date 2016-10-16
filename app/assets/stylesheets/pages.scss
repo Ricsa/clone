@@ -51,7 +51,6 @@ p{
 	
 }
 .element {
-	height: 100vh;
 }
 .glass{
 	opacity:0.3;
@@ -73,6 +72,7 @@ p{
 
 /*NAVBAR*/
 nav{
+	-webkit-animation: fadeInDown 2s ease;
 	font-family: $big-default-font;
 }
 
