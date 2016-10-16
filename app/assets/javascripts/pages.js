@@ -3,6 +3,13 @@ document.addEventListener("turbolinks:load", function() {
 	//var clientHeight = $( window ).height();
 	//$('.element').css('height', clientHeight);
 
+	var bg = jQuery(".element");
+	jQuery(window).resize("resizeBackground");
+	function resizeBackground() {
+	    bg.height(jQuery(window).height());
+	}
+	resizeBackground();
+
 	//jQuery for page scrolling feature - requires jQuery Easing plugin
 	$(function() {
 	    $('a.page-scroll').bind('click', function(event) {
