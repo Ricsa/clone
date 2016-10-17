@@ -153,7 +153,33 @@ footer.page-footer{
 
 }
 
+/*RIKSZA*/
 
-.just {text-align: justify}
+.just {text-align: justify
+}
 
 
+
+  .grow {
+  	display: inline-block;
+  	vertical-align: middle;
+    -webkit-transform: translateZ(0);
+  	transform: translateZ(0);
+ 	box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+ 	-webkit-backface-visibility: hidden;
+ 	backface-visibility: hidden;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-transition-duration: 0.5s;
+    transition-duration: 0.5s;
+    -webkit-transition-property: transform;
+    transition-property: transform;
+      &:hover {
+      transform: scale(1.5);
+      }
+   }
+
+
+.float:hover {
+  -webkit-transform: translateY(-2px);
+  transform: translateY(-2px);
+  }
