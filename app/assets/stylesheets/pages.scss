@@ -73,20 +73,26 @@ p{
     text-shadow: 6px 6px 0px rgba(0,0,0,0.2);
 }
 /*CONTENT FORMAZAS*/
-#ajanlatkeres{ 
+#ajanlatkeres{
 	height: 700px;
 	.vhalign{
 		min-height: 700px;
 		#parallax-form{
+			padding:1em;
 			color:white;
-			background-color: rgba(0,0,0,0.4);
+			background-color: rgba(0,0,0,0.3);
 			border-radius: 1em;
+			transition-duration: 1s;
+			&:hover{
+				background-color: rgba(0,0,0,0.5);
+			}
 			label{
 				color:white;
 			}
 			label.active{
 				color:#009688;
 			}
+			button
 		}
 	}
 }
