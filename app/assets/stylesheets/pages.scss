@@ -67,24 +67,16 @@ p{
 	opacity:0.3;
 }
 
-#ajanlatkeres {
-    height: 700px;
-    .vhalign{
-    	min-height: 700px;
-    }
-}
-
 .parallax-fontshadow{
 	line-height: 1.6em;
     color: rgba(255,255,255,0.9);
     text-shadow: 6px 6px 0px rgba(0,0,0,0.2);
 }
 /*CONTENT FORMAZAS*/
-#ajanlatkeres{
-	
-}
 #ajanlatkeres{ 
+	height: 700px;
 	.vhalign{
+		min-height: 700px;
 		#parallax-form{
 		color:white;
 		background-color: rgba(0,0,0,0.4);
