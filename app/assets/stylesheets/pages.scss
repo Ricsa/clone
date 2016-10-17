@@ -6,7 +6,6 @@
   margin:-63px 0 0; /* negative fixed header height */
 }
 
-
 /* mixin for bullet proof font declaration syntax */
 @mixin declare-font-face($font-family, $font-filename, $font-weight : normal, $font-style :normal, $font-stretch : normal) {
 @font-face {
@@ -74,6 +73,7 @@ p{
 }
 /*CONTENT FORMAZAS*/
 #ajanlatkeres{
+	.parallax-container{
 	height: 700px;
 	.vhalign{
 		min-height: 700px;
@@ -93,6 +93,7 @@ p{
 				color:#009688;
 			}
 		}
+	}
 	}
 }
 
