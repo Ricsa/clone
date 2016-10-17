@@ -41,17 +41,7 @@ p{
 	font-family: $big-default-font;
 }
 
-/*CONTENT*/
-#ajanlatkeres{
-	
-}
-.element {
-	margin-top:-64px;
-}
-
-.glass{
-	opacity:0.3;
-}
+/*CONTENT INIT*/
 .szoveg{
 	font-family:$big-parallax-font;
 	display: flex;
@@ -61,11 +51,36 @@ p{
 	color:rgba(255,255,255,1);
 	text-align: center;
 }
+.vhalign{
+	display: flex;
+	justify-content: center; /* align horizontal */
+	align-items: center;
+	text-align: center;
+	min-height:500px;
+}
+
+.element {
+	margin-top:-64px;
+}
+
+.glass{
+	opacity:0.3;
+}
+
+#ajanlatkeres {
+    height: 700px;
+    .vhalign{
+    	min-height: 700px;
+    }
+}
+
 .parallax-fontshadow{
 	line-height: 1.6em;
     color: rgba(255,255,255,0.9);
     text-shadow: 6px 6px 0px rgba(0,0,0,0.2);
 }
+/*CONTENT FORMAZAS*/
+
 
 /*NAVBAR*/
 nav{
