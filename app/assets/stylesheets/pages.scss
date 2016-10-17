@@ -41,15 +41,29 @@ p{
 }
 
 /*CONTENT INIT*/
-.szoveg{
-	font-family:$big-parallax-font;
-	display: flex;
-	justify-content: center; /* align horizontal */
-	align-items: center;
-	min-height:500px;
-	color:rgba(255,255,255,1);
-	text-align: center;
+#parallax-container-lgtext{
+	height: 600px;
+	.szoveg{
+		font-family:$big-parallax-font;
+		display: flex;
+		justify-content: center; /* align horizontal */
+		align-items: center;
+		min-height:600px;
+		color:rgba(255,255,255,1);
+		text-align: center;
+	}	
 }
+
+.szoveg{
+		font-family:$big-parallax-font;
+		display: flex;
+		justify-content: center; /* align horizontal */
+		align-items: center;
+		min-height:500px;
+		color:rgba(255,255,255,1);
+		text-align: center;
+	}
+
 .vhalign{
 	display: flex;
 	justify-content: center; /* align horizontal */
