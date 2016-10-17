@@ -78,9 +78,15 @@ p{
 	.vhalign{
 		min-height: 700px;
 		#parallax-form{
-		color:white;
-		background-color: rgba(0,0,0,0.4);
-		border-radius: 1em;
+			color:white;
+			background-color: rgba(0,0,0,0.4);
+			border-radius: 1em;
+			label{
+				color:white;
+			}
+			label.active{
+				color:#009688;
+			}
 		}
 	}
 }
