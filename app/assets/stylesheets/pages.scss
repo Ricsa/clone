@@ -1,9 +1,36 @@
+/* full screen opening parallax responsive height fix*/
+.element {
+	margin-top:-128px;
+}
+@media screen
+	and (max-width: 600px){
+		.element{
+			margin-top: -120px;
+		}
+}
+
+@media screen
+and (min-width: 601px)
+	and (max-width: 992px){
+		.element{
+			margin-top: -128px;
+		}
+}
+
 /*for Jquery SPage scrolling feature - solution for fixed nav */
 .jumptarget::before {
   content:"";
   display:block;
-  height:63px; /* fixed header height*/
-  margin:-63px 0 0; /* negative fixed header height */
+  height:64px; /* fixed header height*/
+  margin:-64px 0 0; /* negative fixed header height */
+}
+@media screen and (max-width: 600px){
+	.jumptarget::before{
+		content:"";
+  		display:block;
+		height:55px; /* fixed header height*/
+  		margin:-55px 0 0; /* negative fixed header height */
+	}
 }
 
 /* mixin for bullet proof font declaration syntax */
@@ -73,9 +100,9 @@ p{
 	min-height:500px;
 }
 
-.element {
-	margin-top:-64px;
-}
+
+
+
 
 .glass{
 	opacity:0.3;
@@ -114,8 +141,7 @@ p{
 
 /*NAVBAR*/
 nav{
-	height: 64px;
-	-webkit-animation: fadeInDown 2s ease;
+	-webkit-animation: fadeInDown 1s ease;
 	font-family: $big-default-font;
 }
 
