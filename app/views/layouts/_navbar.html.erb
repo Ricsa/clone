@@ -1,7 +1,9 @@
-<div class="nav-wrapper container">
+<div class="navbar-fixed">
+  <nav class="teal">
+    <div class="nav-wrapper container">
       <%= link_to root_path, class: 'brand-logo', id: 'logo-container' do %>
-  Build-IT
-<% end %>
+        Build-IT
+      <% end %>
       <ul class="right hide-on-med-and-down">
         <li><a class="page-scroll" href="#szolgaltatas">Szolgáltatásaink</a></li>
         <li><a class="page-scroll" href="#referencia">Referenciáink</a></li>
@@ -10,13 +12,16 @@
         <li><a class="page-scroll" href="#kapcsolat">Kapcsolat</a></li>
       </ul>
 
-      <ul id="nav-mobile" class="side-nav">
-        <li><a class="page-scroll" href="#szolgaltatas">Szolgáltatásaink</a></li>
-        <li><a class="page-scroll" href="#referencia">Referenciáink</a></li>
-        <li><a class="page-scroll" href="#ajanlatkeres">Ajánlatkérés</a></li>
-        <li><a class="page-scroll" href="#team">Munkatársaink</a></li>
-        <li><a class="page-scroll" href="#kapcsolat">Kapcsolat</a></li>
-      </ul>
+            
       <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
+    </div>
+  </nav>
 </div>
-  
+
+<ul id="nav-mobile" class="side-nav">
+  <li><a class="page-scroll" href="#szolgaltatas">Szolgáltatásaink</a></li>
+  <li><a class="page-scroll" href="#referencia">Referenciáink</a></li>
+  <li><a class="page-scroll" href="#ajanlatkeres">Ajánlatkérés</a></li>
+  <li><a class="page-scroll" href="#team">Munkatársaink</a></li>
+  <li><a class="page-scroll" href="#kapcsolat">Kapcsolat</a></li>
+</ul>

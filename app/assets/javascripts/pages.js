@@ -1,12 +1,29 @@
 document.addEventListener("turbolinks:load", function() {
-	
-	//var clientHeight = $( window ).height();
-	//$('.element').css('height', clientHeight);
 
+	//for Responsive Full height & width divz
 	var bg = jQuery(".element");
 	jQuery(window).resize("resizeBackground");
 	function resizeBackground() {
-	    bg.height(jQuery(window).height()+64);
+		if( window.matchMedia("screen and (max-width: 600px)") && window.matchMedia("screen and (orientation: portrait)") ) {
+			bg.height(jQuery(window).height()+64)
+		}
+		if( window.matchMedia("screen and (max-width: 600px)") && window.matchMedia("screen and (orientation: landscape)") ) {
+			bg.height(jQuery(window).height()+56)
+		}
+		
+		if( window.matchMedia("screen and (min-width: 601px)") && window.matchMedia("screen and (max-width: 992px)") && window.matchMedia("screen and (orientation: portrait)") ) {
+			bg.height(jQuery(window).height()+56)
+		}
+		if( window.matchMedia("screen and (min-width: 601px)") && window.matchMedia("screen and (max-width: 992px)") && window.matchMedia("screen and (orientation: landscape)") ) {
+			bg.height(jQuery(window).height()+64)
+		}
+		
+		if( window.matchMedia("screen and (min-width: 993px)") ){
+			bg.height(jQuery(window).height()+64)
+		}
+		else{
+			bg.height(jQuery(window).height()+64);
+		}
 	}
 	resizeBackground();
 
