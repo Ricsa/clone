@@ -187,7 +187,11 @@ footer.page-footer{
 .just {text-align: justify
 }
 
+.right {text-align: right
+}
 
+.left {text-align: left
+}
 
   .grow {
   	display: inline-block;
@@ -212,3 +216,8 @@ footer.page-footer{
   -webkit-transform: translateY(-2px);
   transform: translateY(-2px);
   }
+
+  .materialize-textarea {
+  max-height: 160px;
+  }
+
